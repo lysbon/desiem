@@ -1,57 +1,257 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/images/lang-logo.png">
-    </a>
-    <h1>Getting Started with PHP on Heroku</h1>
-    <p>This is a sample PHP application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-php"><span class="glyphicon glyphicon-flash"></span> Getting Started with PHP</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/php-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-php" class="alert-link">Getting Started with PHP on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample doesn't app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/php-getting-started">Heroku Button</a> on the repository.</li>
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/php-getting-started/blob/master/composer.json">composer.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
+<!--========== SLIDER ==========-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/php-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd php-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-php#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-php">Deploying PHP Apps on Heroku</a></li>
-      </ul>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+            <div class="container">
+                <div class="carousel-centered">
+                    <div class="margin-b-40">
+                        <h1 class="carousel-title">Hi-Tech Design</h1>
+                        <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                    </div>
+                    <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+            <div class="container">
+                <div class="carousel-centered">
+                    <div class="margin-b-40">
+                        <h2 class="carousel-title">Hi-Tech Design</h2>
+                        <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                    </div>
+                    <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
 </div>
+<!--========== SLIDER ==========-->
+
+<!--========== PAGE LAYOUT ==========-->
+<!-- About -->
+<div id="about">
+    <div class="content-lg container">
+        <!-- Masonry Grid -->
+        <div class="masonry-grid row">
+            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
+                <div class="margin-b-60">
+                    <h2>Art Of Coding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+                </div>
+                <img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+            </div>
+            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                <div class="margin-b-60">
+                    <img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                </div>
+                <h2>Clean Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+            </div>
+            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                <div class="margin-t-60 margin-b-60">
+                    <h2>Amazing Support</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+                </div>
+                <img class="full-width img-responsive wow fadeInUp" src="img/500x500/03.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+            </div>
+        </div>
+        <!-- End Masonry Grid -->
+    </div>
+
+    <div class="bg-color-sky-light">
+        <div class="content-lg container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 md-margin-b-60">
+                    <div class="margin-t-50 margin-b-30">
+                        <h2>Why Choose Us?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>
+                </div>
+                <div class="col-md-5 col-sm-7 col-md-offset-2">
+                    <!-- Accordion -->
+                    <div class="accordion">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Exceptional Frontend Framework
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Modern Design Trends
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Beatifully Crafted Code
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Accodrion -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+<!-- Latest Products -->
+<div id="products">
+    <div class="content-lg container">
+        <div class="row margin-b-40">
+            <div class="col-sm-6">
+                <h2>Latest Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+            </div>
+        </div>
+        <!--// end row -->
+
+        <div class="row">
+            <!-- Latest Products -->
+            <div class="col-sm-4 sm-margin-b-50">
+                <div class="margin-b-20">
+                    <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
+                </div>
+                <h4><a href="#">Workspace</a> <span class="text-uppercase margin-l-20">Management</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                <a class="link" href="#">Read More</a>
+            </div>
+            <!-- End Latest Products -->
+
+            <!-- Latest Products -->
+            <div class="col-sm-4 sm-margin-b-50">
+                <div class="margin-b-20">
+                    <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                </div>
+                <h4><a href="#">Minimalism</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                <a class="link" href="#">Read More</a>
+            </div>
+            <!-- End Latest Products -->
+
+            <!-- Latest Products -->
+            <div class="col-sm-4 sm-margin-b-50">
+                <div class="margin-b-20">
+                    <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+                </div>
+                <h4><a href="#">Cleant Style</a> <span class="text-uppercase margin-l-20">Design</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                <a class="link" href="#">Read More</a>
+            </div>
+            <!-- End Latest Products -->
+        </div>
+        <!--// end row -->
+    </div>
+</div>
+<!-- End Latest Products -->
+
+<!-- Pricing -->
+<div id="pricing">
+    <div class="bg-color-sky-light">
+        <div class="content-lg container">
+            <div class="row row-space-1">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <!-- Pricing -->
+                    <div class="pricing">
+                        <div class="margin-b-30">
+                            <i class="pricing-icon icon-chemistry"></i>
+                            <h3>Starter Kit <span> - $</span> 49</h3>
+                            <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                        <ul class="list-unstyled pricing-list margin-b-50">
+                            <li class="pricing-list-item">Basic Features</li>
+                            <li class="pricing-list-item">Up to 5 products</li>
+                            <li class="pricing-list-item">50 Users Panels</li>
+                        </ul>
+                        <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                    </div>
+                    <!-- End Pricing -->
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <!-- Pricing -->
+                    <div class="pricing pricing-active">
+                        <div class="margin-b-30">
+                            <i class="pricing-icon icon-badge"></i>
+                            <h3>Professional <span> - $</span> 149</h3>
+                            <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                        <ul class="list-unstyled pricing-list margin-b-50">
+                            <li class="pricing-list-item">Basic Features</li>
+                            <li class="pricing-list-item">Up to 100 products</li>
+                            <li class="pricing-list-item">100 Users Panels</li>
+                        </ul>
+                        <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                    </div>
+                    <!-- End Pricing -->
+                </div>
+                <div class="col-sm-4">
+                    <!-- Pricing -->
+                    <div class="pricing">
+                        <div class="margin-b-30">
+                            <i class="pricing-icon icon-shield"></i>
+                            <h3>Advanced <span> - $</span> 249</h3>
+                            <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                        </div>
+                        <ul class="list-unstyled pricing-list margin-b-50">
+                            <li class="pricing-list-item">Extended Features</li>
+                            <li class="pricing-list-item">Unlimited products</li>
+                            <li class="pricing-list-item">Unlimited Users Panels</li>
+                        </ul>
+                        <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                    </div>
+                    <!-- End Pricing -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+</div>
+<!-- End Pricing -->
 
 {% endblock %}
